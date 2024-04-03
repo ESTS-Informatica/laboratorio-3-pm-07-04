@@ -21,13 +21,12 @@ public class AirTransportation extends Transport
         else
             numberOfContainers = 0;
         
-        super.setFees(3.0);
+        super.setFees(4.0);
     }
     
     public void setName(String planeName){
-        if(planeName != null){
-            name = planeName;
-        }
+        name = planeName;
+        
     }
     
     public String getName(){
@@ -49,11 +48,11 @@ public class AirTransportation extends Transport
     }
     
     public String getTransportType() {
-        return "Transporte aéreo";
+        return "Transporte Aereo";
     }
     
     @Override 
     public String toString(){
-        return super.toString();
+        return super.toString() + "\nNome: " + name + "\nNº de contentores: " + numberOfContainers;
     }
 }

@@ -14,7 +14,7 @@ public class GroundTransportation extends Transport
         if(plate != null)
             licensePlate = plate;
             
-        super.setFees(4.0);
+        super.setFees(3.0);
     }
     
     public void setLicensePlate(String plate){
@@ -31,11 +31,11 @@ public class GroundTransportation extends Transport
     }
     
     public String getTransportType() {
-        return "Transporte terrestre";
+        return "Transporte Terrestre";
     }
     
     @Override 
     public String toString(){
-        return super.toString();
+        return super.toString() + "\nMatricula: " + licensePlate;
     }
 }
