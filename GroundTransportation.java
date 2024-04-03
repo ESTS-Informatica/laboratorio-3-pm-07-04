@@ -7,13 +7,14 @@
  */
 public class GroundTransportation extends Transport
 {
-    private static final double HONORARY = 0.03;
     
     private String licensePlate;
     
     public GroundTransportation(String plate){
         if(plate != null)
             licensePlate = plate;
+            
+        super.setFees(4.0);
     }
     
     public void setLicensePlate(String plate){
@@ -23,5 +24,17 @@ public class GroundTransportation extends Transport
     
     public String getLicensePlate(){
         return licensePlate;
+    }
+    
+    public double getPriceWithFees() {     
+        return super.getPriceWithFees();
+    }
+    
+    public String getTransportType() {
+        return "Transporte terrestre";
+    }
+    
+    @Override public String toString(){
+        return super.toString();
     }
 }

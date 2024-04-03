@@ -7,7 +7,6 @@
  */
 public class AirTransportation extends Transport
 {
-    private static final double HONORARY = 0.04;
     
     private String name;
     private int numberOfContainers;
@@ -20,6 +19,8 @@ public class AirTransportation extends Transport
         if(containers >= 0){
             numberOfContainers = containers;
         }
+        
+        super.setFees(3.0);
     }
     
     public void setName(String planeName){
@@ -40,5 +41,17 @@ public class AirTransportation extends Transport
     
     public int getNumberOfContainers(){
         return numberOfContainers;
+    }
+    
+    public double getPriceWithFees() {     
+        return super.getPriceWithFees();
+    }
+    
+    public String getTransportType() {
+        return "Transporte aéreo";
+    }
+    
+    @Override public String toString(){
+        return super.toString();
     }
 }
