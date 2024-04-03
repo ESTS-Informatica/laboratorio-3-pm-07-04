@@ -11,7 +11,17 @@ public class GroundTransportation extends Transport
     
     private String licensePlate;
     
-    public GroundTransportation(){
-        
+    public GroundTransportation(String plate){
+        if(plate != null)
+            licensePlate = plate;
+    }
+    
+    public void setLicensePlate(String plate){
+        if(plate != null)
+            licensePlate = plate;
+    }
+    
+    public String getLicensePlate(){
+        return licensePlate;
     }
 }
