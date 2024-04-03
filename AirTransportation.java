@@ -16,9 +16,10 @@ public class AirTransportation extends Transport
             name = planeName;
         }
         
-        if(containers >= 0){
+        if(containers > 0)
             numberOfContainers = containers;
-        }
+        else
+            numberOfContainers = 0;
         
         super.setFees(3.0);
     }
@@ -51,7 +52,8 @@ public class AirTransportation extends Transport
         return "Transporte aéreo";
     }
     
-    @Override public String toString(){
+    @Override 
+    public String toString(){
         return super.toString();
     }
 }

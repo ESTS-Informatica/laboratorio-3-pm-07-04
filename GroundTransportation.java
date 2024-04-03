@@ -34,7 +34,8 @@ public class GroundTransportation extends Transport
         return "Transporte terrestre";
     }
     
-    @Override public String toString(){
+    @Override 
+    public String toString(){
         return super.toString();
     }
 }
